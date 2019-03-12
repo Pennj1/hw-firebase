@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<div class="Jumbotron">
+    <div class="text-center">
+   <h1>Anytime is train time</h1> 
+   <h2>Choo choo. Chee chee</h2>
+    </div>
+</div>
+<table class="table table-bordered">
+    <thead> Current Train Schedule
+        <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destinaion</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th> 
+        </tr>
+    </thead>
+    <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyCFq08W4osdoEzZ-qVU7nuzOkliw5O1Zuc",
+              authDomain: "train-hw-5da4b.firebaseapp.com",
+              databaseURL: "https://train-hw-5da4b.firebaseio.com",
+              projectId: "train-hw-5da4b",
+              storageBucket: "train-hw-5da4b.appspot.com",
+              messagingSenderId: "205813675095"
+            };
+            firebase.initializeApp(config);
+          </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
